@@ -1,0 +1,55 @@
+body {
+    color: #333333;
+    font-family: arial;
+    max-width: 650px;
+    margin: 0 auto; /* 0 says no margin for top or bottom, auto is for margin left ane right */
+    padding: 0 16px;
+
+    display: flex;  /* Enable flex box */
+    flex-direction: column; /* Make everything go from top to bottom. Default is row */
+    min-height: 100vh;  /* 100vh meaning all of browser height, 100 view port height*/
+}
+
+.main-content { /* Style the header content  */
+    flex-grow: 1;   /* meaning flex box should take up all left over space */
+}
+
+footer {
+    color: #888888;
+    border-top: 1px solid #eeeeee;
+    margin-top: 16px; /* margin allows space outside of footer box, padding is for inside the box */
+    padding: 16px 0;  /* meaning 16px for top and bottom and 0 for left and right inside the box */
+}
+
+header {
+    margin-top: 16px;
+    margin-bottom: 48px;
+}
+
+h1 {
+    font-size: 64px;
+    margin-bottom: 16px;
+}
+
+/* Customize links just inside the header and not anywhere else */
+header a {
+    color: #888888;
+    margin-right: 16px; /* to add some space between links */
+    text-decoration: none;  /* since we do not want underlined link text which is default */
+}
+.portrait {  /* this will apply to class portrait. On img html tag use class="portrait" to use this */
+    width: 250px;
+}
+
+input {
+    border: 1px solid #cccccc;  /* width, type and color of border (light gray here) */
+    padding: 8px;
+}
+
+button {
+    cursor: pointer;    /* pointer meaning hand like cursor instead of default arrow one */
+    border: 1px solid #888888;  /* Same border color as background */
+    background: #888888;
+    color: white;
+    padding: 8px;
+}

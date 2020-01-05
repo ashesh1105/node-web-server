@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Help</title>
+    <!-- Since public folder is added to classpath with app.use(), we can use the path below-->
+    <link rel="icon" href="/images/app-logo.png"> <!-- This icon will show up in browser tab -->
+    <link rel="stylesheet" href="/css/styles.css">
+    <!-- Any console.log statements from this js will show up under Console of Brower Dev Tool-->
+    <script src="/js/client-side-js.js"></script>
+</head>
+
+<body>
+    <div class="main-content">
+        {{>header}}
+
+        <!-- We render title variable here sent with render command from app.js -->
+        <p>{{helpText}}</p>
+
+    </div>
+
+    {{>footer}}
+</body>
+
+</html>

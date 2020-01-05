@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Weather</title>
+    <!-- Since public folder is added to classpath with app.use(), we can use the path below-->
+    <link rel="icon" href="/images/app-logo.png"> <!-- This icon will show up in browser tab -->
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <!-- We render title variable here sent with render command from app.js -->
+    <div class="main-content">
+        {{>header}}
+
+        <p>Use this site to get your local weather!</p>
+
+        <form id="myForm">
+            <input placeholder="Location">
+            <button>Search</button>
+        </form>
+
+        <p id="message-1"></p>
+        <p id="message-2"></p>
+    </div>
+
+    {{>footer}}
+
+    <!-- Place this script here so DOM elements get fully loaded and available before JS script runs-->
+    <script src="/js/client-side-js.js"></script>
+</body>
+
+</html>
