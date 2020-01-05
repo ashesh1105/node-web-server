@@ -125,7 +125,9 @@ app.get('/weather', (req, res) => {
                         forecast: weatherResponse.summary
                             + ' There\'s currently ' + weatherResponse.temperature
                             + ' degrees out. There is a ' + weatherResponse.precipProbability * 100
-                            + '% chances of rain.',
+                            + '% chances of rain. High temperature for today: '
+                            + weatherResponse.highTemperature + ' and Low: '
+                            + weatherResponse.lowTemperature,
                         location: address
                     })
                 }
